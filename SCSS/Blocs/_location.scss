@@ -1,0 +1,121 @@
+.location {
+    &__box {
+        margin-top: 200px;
+        row-gap: 140px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    &__list:nth-child(2) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+    h1 {
+        max-width: 445px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;
+
+        &:hover {
+            color: $a-p-hov-col;
+            transform: scale(1.1, 1);
+            transition: all 0.4s;
+        }
+
+        &:active {
+            color: $a-p-hov-actv;
+            transform: scale(1.1, 1);
+            transition: all 0.4s;
+        }
+    }
+
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        max-width: 445px;
+        padding: 22px 0 40px;
+    }
+
+
+    &__btn {
+        @include button-shablon ()
+    }
+
+    &__btn:hover {
+        @include buttonHover()
+    }
+
+    &__btn:active {
+        @include buttonActive()
+    }
+
+    &__img {
+        border-radius: 50%;
+    }
+}
+
+//   media-desktop
+
+@media screen and (max-width: 1000px) {
+    .location__item2 {
+        img {
+            max-width: 375px;
+        }
+    }
+}
+
+@media screen and (max-width: 887px) {
+    .location__item2 {
+        img {
+            max-width: 350px;
+        }
+    }
+}
+
+// dedia-tablet
+
+@media screen and (max-width: 768px) {
+    .location {
+        &__list {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__list:nth-child(2) {
+            flex-direction: column-reverse;
+        }
+
+        &__item1 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
+
+// media-mabil
+
+@media screen and (max-width: 768px) {
+    .location__item2 {
+        img {
+            max-width: 275px;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.about {
+    margin-top: 160px;
+
+    &__btn {
+        border-radius: 50%;
+        width: 96px;
+        height: 96px;
+        background-color: $a-p-hov-col;
+        border: none;
+
+    }
+
+    &__navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__list {
+        h2 {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07143px;
+            color: #495567;
+            max-width: 350px;
+            margin-top: 40px;
+
+            &:hover {
+                color: $a-p-hov-col;
+                transform: scale(1.1, 1);
+                transition: all 0.4s;
+                cursor: pointer;
+            }
+
+            &:active {
+                color: $a-p-hov-actv;
+                transform: scale(1.1, 1);
+                transition: all 0.4s;
+                cursor: pointer;
+            }
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+            max-width: 350px;
+            margin-top: 27px;
+        }
+    }
+}
+
+// media-tablet 
+
+@media screen and (max-width: 768px) {
+    .about {
+        &__box {
+            display: flex;
+            gap: 75px;
+        }
+
+        &__navbar {
+            flex-direction: column;
+        }
+
+        &__list{
+            display: flex;
+            gap: 80px;
+        }
+
+        &__item2 {
+            h2 {
+                max-width: 398px;
+                margin-top: 0;
+            }
+
+            p {
+                max-width: 398px;
+            }
+        }
+    }
+}
+
+// media-mobilne 
+
+@media screen and (max-width: 768px) {
+    .about {
+        &__box{
+            justify-content: center;
+        }
+       &__list{
+        flex-direction: column;
+        align-items: center;
+       }
+       &__item2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+       }
+
+    }
+}

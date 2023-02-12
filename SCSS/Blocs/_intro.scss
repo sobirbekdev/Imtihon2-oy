@@ -1,0 +1,98 @@
+main {
+    flex-grow: 1;
+}
+
+.intro {
+    background-image: url(../../Imgs/Bitmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    height: 100%;
+    // opacity: 0.8;
+
+
+    &__title {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFF;
+        max-width: 500px;
+        padding: 140px 0 40px;
+
+        &:hover {
+            color: $a-p-hov-col;
+            transform: scale(1.1, 1.1);
+            transition: all 0.4s;
+        }
+
+        &:active {
+            color: $a-p-hov-actv;
+            transform: scale(1.1, 1.1);
+            transition: all 0.4s;
+        }
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        max-width: 405px;
+        margin-left: 75px;
+    }
+
+    &__btn {
+        margin: 40px 0 152px 75px;
+        @include button-shablon()
+    }
+
+    &__btn:hover {
+        @include buttonHover()
+    }
+    &__btn:active{
+        @include buttonActive()
+      }
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        background-image: url(../../Imgs/Bitmap\ \(1\).png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 650px;
+        height: 100%;
+
+        &__box {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__text {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        &__btn {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .intro {
+        background-image: url(../../Imgs/Bitmap\ \(2\).png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 500px;
+        height: 100%;
+    }
+}

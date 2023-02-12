@@ -1,0 +1,107 @@
+.header {
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+  }
+
+  &__span {
+    display: none;
+  }
+
+  &__list {
+    gap: 58px;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      color: #000;
+      font-size: 50px;
+      cursor: pointer;
+
+      &:hover {
+        color: $a-p-hov-col;
+        transform: scale(1.1, 1);
+        transition: all 0.4s;
+      }
+
+      &:active {
+        color: $a-p-hov-actv;
+        transform: scale(1.1, 1);
+        transition: all 0.4s;
+      }
+    }
+
+    li {
+      display: flex;
+      gap: 32px;
+
+      a {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+
+        &:hover {
+          color: $a-p-hov-col;
+          transform: scale(1.1, 1);
+          transition: all 0.4s;
+        }
+
+        &:active {
+          color: $a-p-hov-actv;
+          transform: scale(1.1, 1);
+          transition: all 0.4s;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    @include button-shablon ()
+  }
+
+  &__btn:hover {
+    @include buttonHover()
+  }
+
+  &__btn:active {
+    @include buttonActive()
+  }
+
+
+}
+
+@media screen and (max-width: 675px) {
+  .header__list {
+    h1 {
+      font-size: 40px;
+    }
+
+    li {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .header__list {
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__span {
+    display: inline-block;
+  }
+
+}

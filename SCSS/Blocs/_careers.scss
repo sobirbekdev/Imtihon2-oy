@@ -1,0 +1,66 @@
+.careers {
+    margin-top: 330px;
+    background-image: url(..//..//Imgs/Mask.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 102px 0;
+
+        h2 {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            color: #FFFFFF;
+            max-width: 415px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+
+        a {
+            img:hover {
+                border: 3px solid chartreuse;
+            }
+        }
+    }
+}
+
+// media-tablet
+
+@media screen and (max-width: 768px) {
+    .careers__box {
+        flex-direction: column;
+        row-gap: 40px;
+
+        h2 {
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .careers__box {
+        h2 {
+            align-items: center;
+            max-width: 266px;
+        }
+    }
+
+    .careers__list {
+        flex-direction: column;
+    }
+
+}

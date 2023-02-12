@@ -1,0 +1,35 @@
+@mixin flexStile($f-d, $s-i, $j-c, $f-w) {
+  display: flex;
+  flex-direction: $f-d;
+  align-items: $a-i;
+  justify-content: $j-c;
+  flex-wrap: $f-w;
+}
+
+@mixin button-shablon() {
+  padding: 14px 38px;
+  background-color: #FCB72B;
+  color: #fff;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+
+@mixin buttonHover() {
+  padding: 14px 38px;
+  background-color: #fff;
+  color: #FCB72B;
+  border: 3px solid #FCB72B;
+  cursor: pointer;
+}
+@mixin buttonActive() {
+  padding: 14px 38px;
+  background-color: #fff;
+  color: #432bfc;
+  border: 3px solid #7ffc2b;
+  cursor: pointer;
+}
