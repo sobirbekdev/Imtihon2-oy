@@ -3,12 +3,12 @@ main {
 }
 
 .intro {
-    background-image: url(../../Imgs/Bitmap.png);
+    background-color: #495567;
+    background: linear-gradient(rgb(0, 0, 0),rgba(0,0,0));
+    background-image: url(..//../Imgs/Bitmap\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 650px;
-    height: 100%;
     // opacity: 0.8;
 
 
