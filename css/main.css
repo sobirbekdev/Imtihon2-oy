@@ -72,7 +72,7 @@ h2 {
   align-items: center;
 }
 .header__list h1 {
-  color: #000;
+  color: #495567;
   font-size: 50px;
   cursor: pointer;
 }
@@ -158,12 +158,12 @@ main {
 }
 
 .intro {
-  background-image: url(../../Imgs/Bitmap.png);
+  background-color: #495567;
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  background-image: url(..//../Imgs/Bitmap\ \(1\).jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 650px;
-  height: 100%;
 }
 .intro__title {
   font-family: "Space Mono";
@@ -225,7 +225,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .intro {
-    background-image: url(../../Imgs/Bitmap\ \(1\).png);
+    background-image: url(../../Imgs/Bitmap.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -248,7 +248,7 @@ main {
 }
 @media screen and (max-width: 481px) {
   .intro {
-    background-image: url(../../Imgs/Bitmap\ \(2\).png);
+    background-image: url(../../Imgs/Bitmap\ \(2\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -507,7 +507,7 @@ main {
   padding: 35px 0;
 }
 .footer__title {
-  color: #000;
+  color: #101112;
   font-size: 50px;
   cursor: pointer;
   font-family: "Space Mono";
